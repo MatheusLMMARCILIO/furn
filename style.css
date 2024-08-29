@@ -1,0 +1,163 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+}
+
+.allPage {
+    width: 100%;
+}
+
+/*Menu*/
+
+.menu {
+    width: 100%;
+    height: auto;
+    background-color: #3b5f50;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.logo p {
+    font-size: 32px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.logo span {
+    font-size: 40px;
+    color: #ffffff7e;
+    font-family: "Montserrat", sans-serif;
+}
+
+.links ul,
+li {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+}
+
+.links a {
+    font-size: 14rem;
+    font-family: sans-serif;
+    color: #ffffff7e;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*Banner*/
+
+.banner {
+    padding: 10px 0 px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #3b5f50;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+
+}
+
+.textLeft h1 {
+    font-size: 40rem;
+    color: white;
+    font-weight: 900;
+    margin: 0px 0px 30px;
+    font-family: sans-serif;
+}
+
+.textLeft p {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    font-size: 14rem;
+    color: #ffffff7e;
+    padding: 0px 0px 24px;
+}
+
+.firstBtn button {
+    max-width: 100%;
+    width: 141px;
+    height: 50px;
+    background-color: #f9bf29;
+    border: 1px solid #f9bf29;
+    border-radius: 50px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.firstBtn a {
+    font-size: 16rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.allLeft {
+    width: 500px;
+    height: auto;
+}
+
+
+.rigth {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.rigth img {
+    max-width: 100%;
+    width: 780px;
+}
+
+
+
+/*Responsividade*/
+
+
+@media screen and (max-width:1000px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0px 0px 20px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .rigth {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:735px) {
+    .links a {
+        font-size: 10px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+
+}
