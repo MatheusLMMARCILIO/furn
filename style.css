@@ -1,5 +1,5 @@
 * {
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     font-size: 1px;
@@ -24,14 +24,12 @@
 .logo p {
     font-size: 32rem;
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
 
 .logo span {
     font-size: 40rem;
     color: #ffffff7e;
-    font-family: "Montserrat", sans-serif;
 }
 
 .links ul,
@@ -43,11 +41,24 @@ li {
 
 .links a {
     font-size: 14rem;
-    font-family: sans-serif;
     color: #ffffff7e;
     text-decoration: none;
     font-weight: 700;
 }
+
+.links a:hover {
+    color: white;
+}
+
+.links i {
+    color: #ffffff7e;
+}
+
+.links i:hover {
+    color: white;
+}
+
+
 
 /*Banner*/
 
@@ -70,11 +81,10 @@ li {
 }
 
 .textLeft h1 {
-    font-size: 40rem;
+    font-size: 45rem;
     color: white;
-    font-weight: 900;
+    font-weight: 500;
     margin: 0px 0px 30px;
-    font-family: sans-serif;
 }
 
 .textLeft p {
@@ -120,6 +130,120 @@ li {
     width: 780px;
 }
 
+/*Crafted*/
+
+.crafted {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 112px 0px;
+}
+
+.allTextBtn {
+    width: 285px;
+    height: auto;
+    margin: 0px 12px;
+    display: block;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.allTextBtn h1 {
+    font-size: 32rem;
+    color: black;
+    margin: 0px 0px 24px;
+    font-weight: 500;
+}
+
+.allTextBtn p {
+    font-size: 14px;
+    color: #6a6a6a;
+    margin: 0px 0px 24px;
+}
+
+.allTextBtn button {
+    width: 120px;
+    height: 50px;
+    background-color: #2f2f2f;
+    border: 1px solid #2f2f2f;
+    border-radius: 50px;
+
+}
+
+.allTextBtn button:hover {
+    width: 120px;
+    height: 50px;
+    background-color: black;
+}
+
+.allTextBtn a {
+    font-size: 16rem;
+    font-family: 'inter', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chairs {
+    height: auto;
+    display: flex;
+}
+
+.NordicChair,
+.KruzoAeroChair,
+.ErgonomicChair {
+    width: 285px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 12px;
+}
+
+.NordicChair img,
+.KruzoAeroChair img,
+.ErgonomicChair img {
+    width: 261px;
+    height: auto;
+    margin: 0px 0px 30px;
+}
+
+.NordicChair h1,
+.KruzoAeroChair h1,
+.ErgonomicChair h1 {
+    font-size: 16rem;
+    color: black;
+    margin: 0px 0px 8px;
+}
+
+.NordicChair strong,
+.KruzoAeroChair strong,
+.ErgonomicChair strong {
+    font-size: 18rem;
+    margin: 0px 0px 8px;
+}
+
+.NordicChair button,
+.KruzoAeroChair button,
+.ErgonomicChair button {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.NordicChair i,
+.KruzoAeroChair i,
+.ErgonomicChair i {
+    font-size: 30rem;
+}
 
 
 /*Responsividade*/
@@ -153,28 +277,28 @@ li {
 
 @media screen and (max-width:735px) {
     .links a {
-        font-size: 10px;
+        font-size: 10rem;
     }
 
     .icons {
         display: none;
     }
 
-.rigth {
-    width: 0%;
-}
+    .rigth {
+        width: 0%;
+    }
 
     .left {
         width: 100%;
     }
 
-.textLeft {
-    margin: 20px;
-}
+    .textLeft {
+        margin: 20px;
+    }
 
-.btnsLft {
-    margin-left: 20px;
-}
+    .btnsLft {
+        margin-left: 20px;
+    }
 
 
 
