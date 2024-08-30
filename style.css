@@ -22,14 +22,14 @@
 }
 
 .logo p {
-    font-size: 32px;
+    font-size: 32rem;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
 
 .logo span {
-    font-size: 40px;
+    font-size: 40rem;
     color: #ffffff7e;
     font-family: "Montserrat", sans-serif;
 }
@@ -52,7 +52,7 @@ li {
 /*Banner*/
 
 .banner {
-    padding: 10px 0 px;
+    padding: 10px 0px;
     width: 100%;
     height: auto;
     display: flex;
@@ -60,11 +60,12 @@ li {
 }
 
 .left {
+    max-width: 100%;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 50px;
+    padding: 0px 0px 0px 50px;
 
 }
 
@@ -92,7 +93,6 @@ li {
     background-color: #f9bf29;
     border: 1px solid #f9bf29;
     border-radius: 50px;
-    margin-right: 12px;
     cursor: pointer;
 }
 
@@ -104,6 +104,7 @@ li {
 }
 
 .allLeft {
+    max-width: 100%;
     width: 500px;
     height: auto;
 }
@@ -140,7 +141,7 @@ li {
 
     .left {
         width: 100%;
-        padding: 50px 0px;
+        padding: 0px;
     }
 
     .rigth {
@@ -158,6 +159,23 @@ li {
     .icons {
         display: none;
     }
+
+.rigth {
+    width: 0%;
+}
+
+    .left {
+        width: 100%;
+    }
+
+.textLeft {
+    margin: 20px;
+}
+
+.btnsLft {
+    margin-left: 20px;
+}
+
 
 
 }
