@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-size: 1px;
+    transition: .5;
 }
 
 .allPage {
@@ -32,11 +33,14 @@
     color: #ffffff7e;
 }
 
+.links {
+    display: flex;
+}
+
 .links ul,
 li {
     display: flex;
     flex-direction: row;
-    margin: 0px 10px;
 }
 
 .links a {
@@ -44,6 +48,8 @@ li {
     color: #ffffff7e;
     text-decoration: none;
     font-weight: 700;
+    padding: 0px 10px;
+    text-align: center;
 }
 
 .links a:hover {
@@ -57,8 +63,6 @@ li {
 .links i:hover {
     color: white;
 }
-
-
 
 /*Banner*/
 
@@ -76,8 +80,10 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 0px 0px 50px;
+}
 
+.textLeft {
+    width: 80%;
 }
 
 .textLeft h1 {
@@ -88,22 +94,23 @@ li {
 }
 
 .textLeft p {
+    max-width: 550px;
     width: 500px;
     max-width: 100%;
     height: auto;
     font-size: 14rem;
     color: #ffffff7e;
-    padding: 0px 0px 24px;
+    margin: 0px 0px 24px;
 }
 
 .firstBtn button {
-    max-width: 100%;
     width: 141px;
     height: 50px;
     background-color: #f9bf29;
     border: 1px solid #f9bf29;
     border-radius: 50px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .firstBtn a {
@@ -137,7 +144,7 @@ li {
     display: flex;
     align-items: start;
     justify-content: center;
-    margin: 112px 0px;
+    padding: 112px 0px;
 }
 
 .allTextBtn {
@@ -199,12 +206,13 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0px 12px;
+    padding: 0px 12px;
 }
 
 .NordicChair img,
 .KruzoAeroChair img,
 .ErgonomicChair img {
+    max-width: 100%;
     width: 261px;
     height: auto;
     margin: 0px 0px 30px;
@@ -248,6 +256,37 @@ li {
 
 /*Responsividade*/
 
+@media screen and (max-width:1140px) {
+    .crafted {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .allTextBtn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 12px 50px;
+        text-align: center;
+    }
+
+
+    .allTextBtn p {
+        width: 70%;
+        text-align: center;
+    }
+
+    .chairs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
 
 @media screen and (max-width:1000px) {
     .menu {
@@ -272,34 +311,50 @@ li {
         display: none;
     }
 
+    .textLeft {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px 12px;
+        text-align: center;
+    }
 
 }
 
 @media screen and (max-width:735px) {
+
+    .textLeft h1 {
+        font-size: 32px;
+    }
+
+    .links {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
     .links a {
-        font-size: 10rem;
+        font-size: 12rem;
+        margin: 0px 0px 12px;
     }
 
-    .icons {
-        display: none;
-    }
 
-    .rigth {
-        width: 0%;
-    }
 
     .left {
         width: 100%;
     }
 
-    .textLeft {
-        margin: 20px;
+    .chairs {
+        flex-direction: column;
     }
 
-    .btnsLft {
-        margin-left: 20px;
-    }
+}
 
+@media screen and (max-width: 399px) {
+    .links a {
+        font-size: 10rem;
+    }
 
 
 }
